@@ -1,0 +1,33 @@
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+  
+    a {
+      display: block;
+      color: $gray-500;
+      background-color: $white;
+      border: 1px solid $gray-500;
+      font-size: 1.125rem;
+  
+      &:hover {
+        background-color: $black;
+        border: 1px solid $black;
+        color: $white;
+        opacity: 1;
+      }
+  
+      @include mobile {
+        font-size: 17px;
+      }
+    }
+  
+    &-turnto {
+      padding: 12px 12px;
+    }
+  
+    &-pages {
+      padding: 12px 16px;
+    }
+  
+  }

@@ -1,0 +1,32 @@
+/* index contact */
+
+.form{
+    max-width: 730px;
+  
+    &__list {
+      text-align: left;
+    }
+    &__label {
+      display: block;
+    }
+  
+    &__input {
+      width: 100%;
+    }
+  }
+  
+  .form__comment {
+    height: 136px;
+  
+    @include pad {
+      height: 100px;
+    }
+  }
+  
+  //index
+  .form__submit {
+    border: 0;
+    width: 50%;
+    line-height: 54px;
+    cursor: pointer;
+  }

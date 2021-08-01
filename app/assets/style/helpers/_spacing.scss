@@ -1,0 +1,188 @@
+//margin spacing
+
+.m {
+    @each $d-key, $d-value in $directions {
+      @if $d-key == "t" {
+        @each $n-key, $n-value in $spacers {
+          &#{$d-key}-#{$n-key} {
+            margin-#{$d-value}: $n-value !important;
+          }
+        }
+      } @else if $d-key == "b" {
+        @each $n-key, $n-value in $spacers {
+          &#{$d-key}-#{$n-key} {
+            margin-#{$d-value}: $n-value !important;
+          }
+        }
+      } @else if $d-key == "l" {
+        @each $n-key, $n-value in $spacers {
+          &#{$d-key}-#{$n-key} {
+            margin-#{$d-value}: $n-value !important;
+          }
+        }
+      } @else if $d-key == "r" {
+        @each $n-key, $n-value in $spacers {
+          &#{$d-key}-#{$n-key} {
+            margin-#{$d-value}: $n-value !important;
+          }
+        }
+      }
+    }
+    //rwd pad
+    @include pad {
+      @each $d-key, $d-value in $directions {
+        @if $d-key == "t" {
+          @each $n-key, $n-value in $spacers-md {
+            &#{$d-key}-md-#{$n-key} {
+              margin-#{$d-value}: $n-value !important;
+            }
+          }
+        } @else if $d-key == "b" {
+          @each $n-key, $n-value in $spacers-md {
+            &#{$d-key}-md-#{$n-key} {
+              margin-#{$d-value}: $n-value !important;
+            }
+          }
+        } @else if $d-key == "l" {
+          @each $n-key, $n-value in $spacers-md {
+            &#{$d-key}-md-#{$n-key} {
+              margin-#{$d-value}: $n-value !important;
+            }
+          }
+        } @else if $d-key == "r" {
+          @each $n-key, $n-value in $spacers-md {
+            &#{$d-key}-md-#{$n-key} {
+              margin-#{$d-value}: $n-value !important;
+            }
+          }
+        }
+      }
+    }
+    //rwd mobile
+    @include mobile {
+      @each $d-key, $d-value in $directions {
+        @if $d-key == "t" {
+          @each $n-key, $n-value in $spacers-sm {
+            &#{$d-key}-sm-#{$n-key} {
+              margin-#{$d-value}: $n-value !important;
+            }
+          }
+        } @else if $d-key == "b" {
+          @each $n-key, $n-value in $spacers-sm {
+            &#{$d-key}-sm-#{$n-key} {
+              margin-#{$d-value}: $n-value !important;
+            }
+          }
+        } @else if $d-key == "l" {
+          @each $n-key, $n-value in $spacers-sm {
+            &#{$d-key}-sm-#{$n-key} {
+              margin-#{$d-value}: $n-value !important;
+            }
+          }
+        } @else if $d-key == "r" {
+          @each $n-key, $n-value in $spacers-sm {
+            &#{$d-key}-sm-#{$n-key} {
+              margin-#{$d-value}: $n-value !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .p {
+    @each $d-key, $d-value in $directions {
+      @if $d-key == "t" {
+        @each $n-key, $n-value in $spacers {
+          &#{$d-key}-#{$n-key} {
+            padding-#{$d-value}: $n-value !important;
+          }
+        }
+      } @else if $d-key == "b" {
+        @each $n-key, $n-value in $spacers {
+          &#{$d-key}-#{$n-key} {
+            padding-#{$d-value}: $n-value !important;
+          }
+        }
+      } @else if $d-key == "l" {
+        @each $n-key, $n-value in $spacers {
+          &#{$d-key}-#{$n-key} {
+            padding-#{$d-value}: $n-value !important;
+          }
+        }
+      } @else if $d-key == "r" {
+        @each $n-key, $n-value in $spacers {
+          &#{$d-key}-#{$n-key} {
+            padding-#{$d-value}: $n-value !important;
+          }
+        }
+      }
+    }
+    //rwd pad
+    @include pad {
+      @each $d-key, $d-value in $directions {
+        @if $d-key == "t" {
+          @each $n-key, $n-value in $spacers-md {
+            &#{$d-key}-md-#{$n-key} {
+              padding-#{$d-value}: $n-value !important;
+            }
+          }
+        } @else if $d-key == "b" {
+          @each $n-key, $n-value in $spacers-md {
+            &#{$d-key}-md-#{$n-key} {
+              padding-#{$d-value}: $n-value !important;
+            }
+          }
+        } @else if $d-key == "l" {
+          @each $n-key, $n-value in $spacers-md {
+            &#{$d-key}-md-#{$n-key} {
+              padding-#{$d-value}: $n-value !important;
+            }
+          }
+        } @else if $d-key == "r" {
+          @each $n-key, $n-value in $spacers-md {
+            &#{$d-key}-md-#{$n-key} {
+              padding-#{$d-value}: $n-value !important;
+            }
+          }
+        }
+      }
+    }
+    //rwd mobile
+    @include mobile {
+      @each $d-key, $d-value in $directions {
+        @if $d-key == "t" {
+          @each $n-key, $n-value in $spacers-sm {
+            &#{$d-key}-sm-#{$n-key} {
+              padding-#{$d-value}: $n-value !important;
+            }
+          }
+        } @else if $d-key == "b" {
+          @each $n-key, $n-value in $spacers-sm {
+            &#{$d-key}-sm-#{$n-key} {
+              padding-#{$d-value}: $n-value !important;
+            }
+          }
+        } @else if $d-key == "l" {
+          @each $n-key, $n-value in $spacers-sm {
+            &#{$d-key}-sm-#{$n-key} {
+              padding-#{$d-value}: $n-value !important;
+            }
+          }
+        } @else if $d-key == "r" {
+          @each $n-key, $n-value in $spacers-sm {
+            &#{$d-key}-sm-#{$n-key} {
+              padding-#{$d-value}: $n-value !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  
+  //special spacing
+  /* faq */
+  .pl-85 {
+      padding-left: 8.5%;
+    }

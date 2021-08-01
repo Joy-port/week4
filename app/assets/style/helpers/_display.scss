@@ -1,0 +1,46 @@
+/* 不顯示 */
+.no-display {
+    display: none !important;
+  }
+  
+  .md-no-display {
+    @include pad {
+      display: none !important;
+    }
+  }
+  /* 不顯示 */
+  .sm-no-display {
+    @include mobile {
+      display: none !important;
+    }
+  }
+  
+  /* display */
+  .d-block{
+    display: block !important;
+  }
+  
+  
+  .md-display {
+    @include pad {
+      display: block !important;
+    }
+  }
+  
+  .sm-display {
+    @include mobile {
+      display: block !important;
+    }
+  }
+  
+  .d-md-inline{
+    @include pad{
+      display: inline !important;
+    }
+  }
+  
+  .md-no-display {
+    @include pad {
+      display: none !important;
+    }
+  }

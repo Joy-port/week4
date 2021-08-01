@@ -1,0 +1,62 @@
+//util-colors
+//background-color
+@each $key, $value in $theme-colors {
+    .bg-#{$key} {
+      background-color: $value;
+    }
+  }
+  
+  //border-color
+  .bd {
+    @each $key, $value in $grays {
+      &-#{$key} {
+        border: 1px solid $value;
+      }
+    }
+    @include mobile {
+      @each $key, $value in $grays {
+        &-sm-#{$key} {
+          border: 1px solid $value;
+        }
+      }
+    }
+  }
+  
+  .bd {
+    @each $d-key, $d-value in $directions {
+      @if $d-key == "t" {
+        @each $key, $value in $grays {
+          &-#{$d-key}-#{$key} {
+            border-#{$d-value}: 1px solid $value;
+          }
+        }
+      } @else if $d-key == "r" {
+        @each $key, $value in $grays {
+          &-#{$d-key}-#{$key} {
+            border-#{$d-value}: 1px solid $value;
+          }
+        }
+      } @else if $d-key == "b" {
+        @each $key, $value in $grays {
+          &-#{$d-key}-#{$key} {
+            border-#{$d-value}: 1px solid $value;
+          }
+        }
+      } @else if $d-key == "l" {
+        @each $key, $value in $grays {
+          &-#{$d-key}-#{$key} {
+            border-#{$d-value}: 1px solid $value;
+          }
+        }
+      }
+    }
+  }
+  
+  //call out
+  .callout-danger {
+    border-left: 0.5rem solid #9C2015;
+    padding-left: 1rem;
+    @include mobile {
+      padding-left: 0.5rem;
+    }
+  }

@@ -1,0 +1,62 @@
+//util.font-weight
+//font-weight 3 6 7 9 (5=normal）
+.fw {
+    @each $key in 5, 6, 7, 9 {
+      &-#{$key} {
+        font-weight: $key * 100 !important;
+      }
+    }
+    //rwd pad
+    @include pad {
+      @each $key in 5, 6, 7, 9 {
+        &-md-#{$key} {
+          font-weight: $key * 100 !important;
+        }
+      }
+    }
+    //rwd mobile
+    @include mobile {
+      @each $key in 5, 6, 7, 9 {
+        &-sm-#{$key} {
+          font-weight: $key * 100 !important;
+        }
+      }
+    }
+  }
+  
+  //font-size
+  .fz {
+    @each $f-key, $f-value in $font-sizes {
+      &-#{$f-key} {
+        font-size: $f-value !important;
+      }
+    }
+    //rwd pad
+    @include pad {
+      @each $f-key, $f-value in $font-sizes {
+        &-md-#{$f-key} {
+          font-size: $f-value !important;
+        }
+      }
+    }
+    //rwd mobile
+    @include mobile {
+      @each $f-key, $f-value in $font-sizes {
+        &-sm-#{$f-key} {
+          font-size: $f-value !important;
+        }
+      }
+    }
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }

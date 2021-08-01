@@ -1,12 +1,231 @@
 ---
-title: 首頁
+title: home page
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<h1>
-  這是一段話
-</h1>
+<!--banner-->
+<section>
+  <div class="bg-banner">
+    <div class="container banner-slogan flex flex-column align-end justify-center">
+      <p class="text-danger | fz-5 fz-md-9 fz-sm-11">Promise-Desert 2020 早春系列</p>
+      <h2 class="text-danger | fw-7 | fz-2 fz-md-4 fz-sm-6">看得清，才能看得遠</h2>
+    </div>
+  </div>
+</section>
+ 
+<!-- service -->
+<section>
+  <div class="bg-secondary">
+    <div class="container container-section service">
+      <h3 class="mb-13 mb-md-12 mb-sm-8 | text-center text-danger fw-7 | fz-4 fz-md-6 fz-sm-8">用專業的心，做專業的事</h3>
+      <ul class="flex justify-between flex-md-wrap">
+        <li class="card-list-4 | text-center | mb-md-10">
+          <img
+            class="mb-5 img-83"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-dollar.svg"
+            alt="service icon"
+          />
+          <h4 class="mb-2 | text-danger fw-7 | fz-8">單一價格</h4>
+          <p class="text-left">無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+        </li>
+        <li class="card-list-4 | text-center | mb-md-10">
+          <img
+            class="mb-5 img-83"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-clock.svg"
+            alt="service icon"
+          />
+          <h4 class="mb-2 | text-danger fw-7 | fz-8">20 分鐘即可取件</h4>
+          <p class="text-left">
+            為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快
+            20 分鐘即可完成。
+          </p>
+        </li>
+        <li class="card-list-4 | text-center | mb-md-10">
+          <img
+            class="mb-5 img-83"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-heart.svg"
+            alt="service icon"
+          />
+          <h4 class="mb-2 | text-danger fw-7 | fz-8">安心售後服務</h4>
+          <p class="text-left">
+            我們提供長達 120
+            天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
+          </p>
+        </li>
+        <li class="card-list-4 | text-center | mb-md-10">
+          <img
+            class="mb-5 img-83"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-glasses.svg"
+            alt="service icon"
+          />
+          <h4 class="mb-2 | text-danger fw-7 | fz-8">關於鏡片</h4>
+          <p class="text-left">使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-<div class="box"></div>
+<!-- classic series -->
+<section>
+  <div class="container container-section classic">
+    <h3 class="title | mb-12 | text-danger fw-7">經典系列鏡框</h3>
+    <ul>
+      <li class="card-body">
+        <a href="#" class="mb-10 mb-md-2">
+          <img
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-1.png?raw=true"
+            alt="classic glasses banner" class="mr-9 card-body-img"
+          />
+          <div class="card-body-title">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-diamond.svg "
+              alt="classic glasses icon"
+              class="img-44 img-md-37"
+            />
+            <p class="text-primary fw-9 | fz-4 fz-md-7 fz-sm-11">OPTICAL</p>
+          </div>
+        </a>
+      </li>
+      <li class="card-body card-body-reverse">
+        <a href="#" class="mb-10 mb-md-2">
+          <img
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2.png?raw=true"
+            alt="classic glasses banner" class="mr-md-9  card-body-img"
+          />
+          <div class="card-body-title">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-sun.svg "
+              alt="classic glasses icon" class="mr-md-9 img-44 img-md-37"
+            />
+            <p class="mr-9 | text-primary fw-9 | fz-4 fz-md-7 fz-sm-11">SUNGLASSES</p>
+          </div>
+        </a>
+      </li>
+      <li class="card-body">
+        <a href="#" class="mb-10 mb-md-2">
+          <img
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-3.png?raw=true"
+            alt="classic glasses banner" class="mr-9 card-body-img"
+          />
+          <div class="card-body-title">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-thunder.svg "
+              alt="classic glasses icon"
+              class="img-44 img-md-37"
+            />
+            <p class="text-primary fw-9 | fz-4 fz-md-7 fz-sm-11">FUNCTIONAL</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- cobrands series -->
+<section>
+<div class="bg-cobrand">
+  <div class="container container-section cobrand">
+     <h3 class="title | mb-12 | text-white fw-7 ">聯名設計鏡框</h3>
+     <ul class="cobrand-list">
+      <li class="cobrand-card | card-list-2  | mb-sm-5">
+        <a href="#" class="bg-white">
+          <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true" alt="">
+          <h4 class="text-primary fw-7 | fz-1 fz-md-6">Double A+</h4>
+        </a>
+        
+       </li>
+      <li class="cobrand-card | card-list-2  | mb-sm-5">
+        <a href="#" class="bg-white">
+          <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true" alt="">
+          <h4 class="text-primary fw-7 | fz-1 fz-md-6">YOUTH</h4>
+        </a>
+        
+        </li>
+    </ul>
+</div>
+</div>
+</section>
+
+<!-- recommend --> 
+<section>
+<div class="container container-section recommend">
+  <h3 class="title | mb-12 | text-danger fw-7 ">顧客推薦</h3>
+  <ul class="flex justify-between align-stretch flex-md-wrap">
+    <li class="card-list-4 | flex flex-column mb-md-10 mb-sm-5">
+      <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-1.png?raw=true" alt="customer 1" class="recommend-card">
+      <div class="card-border flex-grow pt-5 pb-5 pr-5 pl-5">
+        <p class="mb-2 | text-600">Jessy</p>
+        <p class="mb-2 | text-600" >眼鏡品質優良，下次還會想來這邊購買！</p>
+        <time class="text-300 | fz-12">2021/06/20</time>
+      </div>
+    </li>
+    <li class="card-list-4 | flex flex-column mb-md-10 mb-sm-5">
+      <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-2.png?raw=true" alt="customer 2" class="recommend-card">
+      
+      <div class="card-border flex-grow pt-5 pb-5 pr-5 pl-5">
+        <p class="mb-2 | text-600" >凱倫</p>
+        <p class="mb-2 | text-600" >做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+        <time class="text-300 | fz-12">2021/04/18</time>
+      </div>
+    </li>
+    <li class="card-list-4 | flex flex-column mb-md-10 mb-sm-5">
+      <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-3.png?raw=true" alt="customer 3" class="recommend-card">
+     
+      <div class="card-border flex-grow pt-5 pb-5 pr-5 pl-5">
+        <p class="mb-2 | text-600">悠悠</p>
+        <p class="mb-2 | text-600" >謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+        <time class="text-300 | fz-12">2020/12/25</time>
+      </div>
+    </li>
+    <li class="card-list-4 | flex flex-column mb-md-10 mb-sm-5">
+      <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-4.png?raw=true" alt="customer 4" class="recommend-card">
+    
+      <div class="card-border flex-grow pt-5 pb-5 pr-5 pl-5">
+        <p class="mb-2 | text-600">Kyuan</p>
+        <p class="mb-2 | text-600" >服務很好，品質沒有任何問題，非常喜歡。</p>
+        <time class="text-300 | fz-12">2020/10/31</time>
+      </div>
+    </li>
+    
+  </ul>
+</div>
+</section>
+
+
+<!-- contact form -->
+<section>
+  <div class="bg-secondary">
+    <div class="container container-section container-form">
+      <h3 class="mb-7 mb-sm-6 | title fw-7 text-center">聯絡我們</h3>
+      <p class="mb-6 mb-md-5 mb-sm-3 | fz-9 fz-md-11" >我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+      <form action="#" class="text-center">
+        <ul class="form__list | mb-13 mb-md-6">
+          <li class="mb-5 mb-md-2">
+            <label class="form__label mb-1 | fz-md-12" for="name">姓名</label>
+            <input type="name" class="form__input | pt-3 pb-3 pl-4 pr-4 pt-md-2 pb-md-2  pl-md-3 pr-md-3 | bd-black" name="name" id="name" placeholder="陳小明">
+          </li>
+          <li class="mb-5 mb-md-2">
+            <label class="form__label mb-1 | fz-md-12" for="tel">聯絡電話</label>
+            <input type="tel" class="form__input | pt-3 pb-3 pl-4 pr-4 pt-md-2 pb-md-2  pl-md-3 pr-md-3 bd-black" name="tel" id="tel" placeholder="0912-345-678">
+          </li>
+          <li class="mb-5 mb-md-2">
+            <label class="form__label mb-1 | fz-md-12" for="email">電子郵件</label>
+            <input type="email" class="form__input | pt-3 pb-3 pl-4 pr-4 pt-md-2 pb-md-2  pl-md-3 pr-md-3 bd-black" name="email" id="email" placeholder="example@email.com">
+          </li>
+          <li class="mb-5 mb-md-2">
+            <label class="form__label mb-1 | fz-md-12" for="comment">意見反應</label>
+            <textarea class="form__input | pt-3 pb-3 pl-4 pr-4 pt-md-2 pb-md-2  pl-md-3 pr-md-3 | bd-black form__comment" name="comment" id="comment"  rows="10" cols="30" placeholder="請輸入您的意見" ></textarea>
+          </li>
+          <li class="">
+            <input type="checkbox" name="agreement" id="agreement">
+            <label for="agreement">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+          </li>
+        </ul>
+        <button type="submit" class="form__submit bg-primary text-white">確認送出</button>
+        
+      </form>
+  </div>
+</section>

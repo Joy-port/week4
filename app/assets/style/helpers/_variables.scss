@@ -1,0 +1,209 @@
+// color
+
+//gray
+$white: #fff;
+$gray-200: #dcdcdc;
+$gray-300: #707070;
+$gray-400: #6c6c6c;
+$gray-500: #555555;
+$gray-100: #495057; /*store*/
+$gray-600: #212529;
+$gray-700: #111619;
+$gray-900: #00000020; //map
+$gray-800: #0a0a0a;
+$black: #000;
+
+//gray map
+$grays: (
+  "100": $gray-100,
+  /* 新增 */ "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900,
+  "white": $white,
+  "black": $black,
+);
+
+//red oranges
+$red-100: #fbf2f2;
+$red-400: #aa0601;
+$red-800: #650300;
+$org-300: #b75929;
+$org-800: #5f3e2d;
+
+//bootstrap theme colors
+$primary: $red-400;
+$secondary: $red-100;
+$danger: $red-800;
+$warning: $org-300;
+$info: $org-800;
+//$success
+
+//theme map
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  //"success":    $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "white": $white,
+  "black": $black,
+);
+
+$font-size-base: 1rem;
+//font-size
+$font-sizes: (
+  "1": $font-size-base * 4.5,
+  //72px
+  "2": $font-size-base * 4,
+  "3": $font-size-base * 2.5,
+  // 40
+  "4": $font-size-base * 3,
+  // 48
+  "5": $font-size-base * 2.25,
+  //36
+  "6": $font-size-base * 2,
+  // 32
+  "7": $font-size-base * 1.75,
+  "8": $font-size-base * 1.5,
+  //24
+  "9": $font-size-base * 1.25,
+  // 20
+  "10": $font-size-base * 1.125,
+  // 18
+  "11": $font-size-base,
+  "12": $font-size-base * 0.875 //14,
+);
+
+// spacer-setting reference from bs5
+// 方向
+$directions: (
+  "+": "",
+  // '+' means all directions
+  "x": "",
+  // 'x' means x axis
+  "y": "",
+  // 'y' means y axis
+  "t": "top",
+  "r": "right",
+  "b": "bottom",
+  "l": "left",
+);
+
+$spacer: 1rem; //16px
+
+$spacers: (
+  "0": 0,
+  "1": $spacer / 4,
+  //4
+  "2": $spacer / 2,
+  //8
+  "3": $spacer * 0.75,
+  //12
+  "4": $spacer * 0.875,
+  //14
+  "5": $spacer,
+  //16
+  "6": $spacer * 1.25,
+  // 20
+  "7": $spacer * 1.5,
+  //24
+  "8": $spacer * 1.75,
+  // 28
+  "9": $spacer * 1.875,
+  // 30
+  "10": $spacer * 2,
+  // 32
+  "11": $spacer * 2.25,
+  //36
+  "12": $spacer * 2.5,
+  // 40
+  "13": $spacer * 3,
+  // 48
+  "14": $spacer * 3.5,
+  //56
+  "15": $spacer * 3.75,
+  //60
+  "16": $spacer * 4,
+  // 64
+  "17": $spacer * 4.5,
+  // 72
+  "18": $spacer * 6,
+  //96
+  "19": $spacer * 6.5,
+  //104
+  "20": $spacer * 10 //160,
+);
+
+$spacers-md: (
+  "0": 0,
+  "1": $spacer / 4,
+  //4
+  "2": $spacer / 2,
+  //8
+  "3": $spacer * 0.75,
+  //12
+  "4": $spacer * 0.875,
+  //14
+  "5": $spacer,
+  //16
+  "6": $spacer * 1.25,
+  // 20
+  "7": $spacer * 1.5,
+  //24
+  "8": $spacer * 1.75,
+  // 28
+  "9": $spacer * 1.875,
+  // 30
+  "10": $spacer * 2,
+  // 32
+  "11": $spacer * 2.25,
+  //36
+  "12": $spacer * 2.5,
+  // 40
+  "13": $spacer * 3,
+  // 48
+  "17": $spacer * 4.5,
+  "18": $spacer * 6 //96,
+);
+
+$spacers-sm: (
+  "0": 0,
+  "1": $spacer / 4,
+  //4
+  "2": $spacer / 2,
+  //8
+  "3": $spacer * 0.75,
+  //12
+  "4": $spacer * 0.875,
+  //14
+  "5": $spacer,
+  //16
+  "6": $spacer * 1.25,
+  // 20
+  "7": $spacer * 1.5,
+  //24
+  "8": $spacer * 1.75,
+  // 28
+  "9": $spacer * 1.875,
+  // 30
+  "10": $spacer * 2,
+  // 32
+  "11": $spacer * 2.25,
+  //36
+  "12": $spacer * 2.5,
+  // 40
+  "13": $spacer * 3,
+  // 48
+  "14": $spacer * 3.5 //56,
+);
+
+//posts
+
+/* breadcrumb 分隔符號 */
+$breadcrumb-divider: quote("/");

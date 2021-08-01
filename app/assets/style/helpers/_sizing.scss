@@ -1,0 +1,41 @@
+@mixin size($width, $height: $width) {
+    //預設可以只填一個數字就是正方形
+    width: $width;
+    height: $width;
+    }
+    
+    .img-83{
+       @include size(83px); 
+    }
+    
+    .img-48{
+        @include size(48px);
+    }
+    
+    .img-44{
+        @include size(44px);
+    }
+    
+    .img-md-37{
+        @include pad{
+            @include size(37px);
+        }
+    }
+    
+    .img-29{
+        @include size (29px);
+    }
+    
+    .img-24{
+        @include size (24px); 
+    }
+    
+    .img-20{
+        @include size(20px);
+    }
+    
+    .img-md-24{
+        @include pad{
+            @include size (24px); 
+        }
+    }

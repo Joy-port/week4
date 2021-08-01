@@ -1,0 +1,14 @@
+/* breadcrumb in blog article */
+.breadcrumb {
+    &__container {
+      display: flex;
+    }
+  }
+  
+  /* breadcrumb slash */
+  /* Add a slash symbol (/) before/behind each list item */
+  .breadcrumb__container li + li:before {
+    padding: 0px;
+    color: black;
+    content: "/\00a0";
+  }

@@ -1,0 +1,108 @@
+// flexbox
+.flex{
+    display: flex;
+    &-wrap{
+      flex-wrap: wrap;
+    }
+  
+    &-md-wrap{
+      @include pad{
+        flex-wrap: wrap;
+      }
+    }
+  
+    &-sm-wrap{
+      @include mobile{
+        flex-wrap: wrap;
+      }
+    }
+  
+    &-nowrap{
+      flex-wrap: nowrap;
+    }
+  
+    &-md-nowrap{
+      @include pad{
+        flex-wrap: nowrap;
+      }
+    }
+  
+    &-sm-nowrap{
+      @include mobile{
+        flex-wrap: nowrap;
+      }
+    }
+  
+  
+    &-column{
+      flex-direction: column;
+    }
+  
+    &-md-column{
+      @include pad{
+        flex-direction: column;
+      }
+    }
+  
+    &-sm-column{
+      @include mobile{
+        flex-direction: column;
+      }
+    }
+
+    &-grow{
+      flex-grow: 1;
+       /* 讓內容自適應延伸 父 flex 子 grow */
+      /* 找出最高的內容高度為 168 -144 */
+
+    }
+ }
+
+.flex-md{
+  @include pad{
+    display: flex;
+  }
+}
+
+$justify-positions: (
+  "start": flex-start,
+  "end": flex-end,
+  "center": center,
+  "around": space-around,
+  "between": space-between,
+  "evenly": space-evenly 
+);
+$align-positions: (
+  "start": flex-start,
+  "end": flex-end,
+  "center": center,
+  "stretch": stretch,
+  "baseline": baseline
+);
+
+@mixin just-align($name, $prop, $arr) {
+  @each $mod, $dir in $arr {
+    .#{$name}-#{$mod} {
+      #{$prop}: #{$dir};
+    }
+  }
+  @include pad{ 
+    @each $mod, $dir in $arr {
+      .#{$name}-md-#{$mod} {
+        #{$prop}: #{$dir};
+      }
+    }
+  }
+
+  @include mobile{
+    @each $mod, $dir in $arr {
+      .#{$name}-sm-#{$mod} {
+        #{$prop}: #{$dir};
+      }
+    }
+  }
+}
+
+
+@include just-align("align", "align-items", $align-positions);
+@include just-align("justify", "justify-content", $justify-positions);

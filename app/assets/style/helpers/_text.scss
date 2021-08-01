@@ -1,0 +1,78 @@
+//title in pages
+/* index home page font*/
+.title {
+    font-size: 3rem;
+    text-align: center;
+  
+    @include pad {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    @include mobile {
+      font-size: 1.25rem;
+  
+      margin-bottom: 1.25rem;
+    }
+  }
+  /* tab pages font */
+  .subtitle {
+    /* 64px */
+    font-size: 3rem;
+    line-height: 1.66;
+    margin-bottom: 3.75rem;
+  
+    @include mobile {
+      font-size: 1.75rem;
+    }
+  }
+  
+  .text-xs {
+    font-size: 0.875rem; /* 14px */
+  }
+  
+  .text-s {
+    font-size: 1.25rem; /* 20px */
+    @include pad {
+      font-size: 1rem;
+    }
+  }
+  
+  .text-m {
+    font-size: 1.5rem; /* 24px */
+    @include pad {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+  }
+  
+  //text-color
+  .text{
+    @each $key, $value in $theme-colors {
+      &-#{$key} {
+        color: $value;
+      }
+    }
+    @include mobile {
+      @each $key, $value in $theme-colors {
+        &-sm-#{$key} {
+          color: $value;
+        }
+      }
+    }
+  }
+  
+  @each $key, $value in $grays {
+    .text-#{$key} {
+      color: $value;
+    }
+  }
+  
+  /* opacity */
+  .opacity-6 {
+    opacity: 0.6;
+  }
+  
+  .opacity-7 {
+    opacity: 0.7;
+  }

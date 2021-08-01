@@ -1,24 +1,37 @@
-$color: #00cc99;
+@import "helpers/variables";
+@import "mixin/breakpoints";
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import "base/reset";
+@import "base/base";
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import "utilities/grid";
+@import "utilities/typography";
+@import "utilities/background";
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
- 
+@import "helpers/display"; 
+@import "helpers/flex";
+@import "helpers/spacing";
+@import "helpers/sizing";
+@import "helpers/text";
+@import "helpers/button";
+@import "helpers/card";
+
+@import "components/menu"; 
+@import "components/logo";
+@import "components/form";
+@import "components/select";
+@import "components/breadcrumb";
+@import "components/tags";
+@import "components/pagination";
+
+@import "pages/index";
+@import "pages/products";
+@import "pages/location";
+@import "pages/posts";
+
+
+//@import "pages/optical"; delete
+//@import "pages/sunglasses"; delete
+//@import "pages/store";  delete
+//@import "layout/footer"; delete
+//@import "pages/blog"; delete

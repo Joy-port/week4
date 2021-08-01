@@ -1,0 +1,56 @@
+/* 排版 */
+.info-card {
+    width: 42%;
+  
+    @include pad {
+      width: 100%;
+    }
+  
+    @include mobile {
+      display: block;
+    }
+    //pc mobile display
+    &-img {
+      width: 100%;
+      height: 224px;
+      object-fit: cover;
+      object-position: center;
+  
+      @include pad {
+        display: none;
+      }
+  
+      @include mobile {
+        display: block;
+        height: 164px;
+      }
+    }
+    //pad display
+  
+    &-pad {
+      display: none;
+  
+      @include pad {
+        display: block;
+        width: 47%;
+      }
+  
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+  
+  .map {
+    width: 57%;
+    height: auto;
+  
+    @include pad {
+      width: 100%;
+      height: 422px;
+    }
+  
+    @include mobile {
+      height: 211px;
+    }
+  }

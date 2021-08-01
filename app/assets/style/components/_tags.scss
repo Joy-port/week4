@@ -1,0 +1,37 @@
+//article tags
+.tags {
+    &__aside {
+      width: 22%;
+      @include mobile {
+        width: 100%;
+      }
+    }
+    &__header {
+      display: flex;
+  
+      img {
+        width: 38px;
+  
+        @include pad {
+          width: 19px;
+        }
+      }
+    
+    }
+    &__title{
+      color: $primary;
+      font-weight: bold;
+      
+      @include pad {
+        line-height: 42px;
+      }
+  
+    }
+    &__content {
+      a {
+        @include pad {
+          line-height: 2.25;
+        }
+      }
+    }
+  }

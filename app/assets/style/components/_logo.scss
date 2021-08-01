@@ -1,0 +1,26 @@
+.logo {
+    @include mobile {
+      padding: 10px 164px;
+    }
+  
+    a {
+      display: block;
+  
+      background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+  
+      text-indent: 101%;
+      white-space: nowrap;
+      overflow: hidden;
+  
+      width: 80px;
+      height: 48px;
+  
+      @include mobile {
+        width: 48px;
+        height: 29px;
+      }
+    }
+  }

@@ -1,0 +1,23 @@
+/* mobile menu bar */
+
+.menu {
+
+    @include mobile {
+      width: 100%;
+      border-bottom: 0;
+    }
+  
+    li {
+      @include mobile {
+        width: 50%;
+      }
+    }
+  
+    a {
+  
+      @include mobile {
+        text-align: center;
+        padding: 8px 54px;
+      }
+    }
+  }

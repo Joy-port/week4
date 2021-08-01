@@ -1,0 +1,108 @@
+//4->2->1
+.card-list-4 {
+    width: 23%;
+    margin: 0 auto;
+  
+    @include pad {
+      width: 47.8%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  
+  //3->2->1
+  .card-list-3 {
+    width: 31.5%;
+  
+    @include pad {
+      width: 47.8%;
+    }
+  
+    @include mobile {
+      width: 100%;
+    }
+  }
+  
+  //2->2->1
+  .card-list-2 {
+    width: 47.8%;
+  
+    @include mobile {
+      width: 100%;
+    }
+  }
+  
+  .card-list-md-2 {
+    @include pad {
+      width: 47.8%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  
+  .card-list-25 {
+    width: 42%;
+  
+    @include pad {
+      width: 100%;
+    }
+  }
+  
+  // card-img
+  
+  .card-img-2 {
+    width: 57%;
+    height: auto;
+    object-fit: cover;
+  
+    @include pad {
+      width: 48%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  
+  .card-img-3 {
+    width: 100%;
+    height: 224px;
+    object-fit: cover;
+    object-position: center;
+  
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+  
+    @include pad {
+      height: 164px;
+    }
+  }
+  
+  //card-content
+  
+  .card-content {
+    width: 40%;
+  
+    @include pad {
+      width: 46%;
+    }
+  
+    @include mobile {
+      width: 100%;
+    }
+    h3 {
+      line-height: 1.9;
+    }
+  }
+  
+  //card-border
+  .card-border{
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  
+    -moz-box-shadow: 0px 3px 3.5px #00000029;
+    -webkit-box-shadow: 0px 3px 3.5px #00000029;
+    box-shadow: 0px 2px 3.5px #00000029;
+  
+  }

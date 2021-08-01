@@ -1,0 +1,55 @@
+//store
+.btn-black {
+    display: block;
+    width: 100%;
+    height: 67px;
+    line-height: 67px;
+  
+    text-align: center;
+  }
+  
+  //blog
+  //tags hover
+  
+  .btn-tags{
+    display: block;
+  
+    &:hover {
+      display: inline-block;
+      background-color: $primary;
+      color: $white;
+      border-radius: 5px;
+      opacity: 1;
+      margin-bottom: -8px;
+    }
+  }
+  
+  .btn-shadow{
+    &:hover {
+      text-shadow: rgba(255, 255, 255, 0.1) -1.5px -1.5px 1px,
+        rgba(0, 0, 0, 0.75) 1px 1px 1px;
+      opacity: 1;
+    }
+  }
+  
+  .btn-primary{
+    display: block;
+    &:hover {
+      background-color: $primary;
+      border-radius: 5px;
+      opacity: 1;
+    }
+  }
+  
+  .btn-sm-white{
+    @include mobile{
+    display: block;
+    &:hover {
+      background-color: $white;
+      color: $primary;
+      text-shadow: none;
+      opacity: .7;
+    
+    }
+  }
+  }

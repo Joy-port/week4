@@ -1,0 +1,50 @@
+//container
+.container {
+    max-width: 1140px; /* 1110+30 */
+    margin: 0 auto;
+  
+    padding-left: 15px;
+    padding-right: 15px;
+  
+    @include pad {
+      max-width: 720px; /* 690+30 */
+    }
+  
+    @include mobile {
+      max-width: 375px; /* 345+30 */
+    }
+  }
+  
+  .container-section {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  
+    @include pad {
+      padding-top: 40px;
+      padding-bottom: 56px;
+    }
+    @include mobile {
+      padding-top: 32px;
+      padding-bottom: 40px;
+    }
+  }
+  
+  .container-tab {
+    padding-top: 96px;
+    padding-bottom: 160px;
+  
+    @include pad {
+      padding-top: 60px;
+      padding-bottom: 96px;
+    }
+  
+    @include mobile {
+      padding-top: 28px;
+      padding-bottom: 56px;
+    }
+  }
+  
+  .container-form{
+    max-width: 730px;
+    margin: 0 auto;
+  }

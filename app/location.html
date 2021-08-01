@@ -1,0 +1,96 @@
+---
+title: store info
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<!-- 門市據點 分店資訊 -->
+<section>
+  <div class="container container-tab">
+    <h2 class="subtitle callout-danger fw-7">門市據點</h2>
+    <div class="mb-10 mb-md-7 mb-sm-6">
+      <label for="select-store" class="mr-5 | text-m | fz-sm-12"
+        >選擇分店</label
+      >
+      <select
+        name=""
+        id="select-store"
+        class="select | pl-5 pr-5 | text-100 fz-10 fz-md-11 fz-sm-12"
+      >
+        <option selected value="台北市中山旗艦店">台北中山旗艦店</option>
+        <option value="新北市">新北板橋分店</option>
+        <option value="台中市">台中車站分店</option>
+        <option value="台南市">台南安平分店</option>
+      </select>
+    </div>
+
+    <div class="flex justify-between flex-md-column">
+      <div class="info-card flex-md justify-md-between align-md-center | sm-display mb-10 mb-sm-5">
+        <!-- pc mobile display -->
+        <img
+          class="info-card-img"
+          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/locate1.jpeg?raw=true"
+          alt="img store"
+        />
+
+        <!-- pad display -->
+        <img
+          class="info-card-pad"
+          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/locate1.jpeg?raw=true"
+          alt="img store"
+        />
+        <div class="card-list-md-2 | bd-900">
+          <div
+            class="
+              pt-3
+              pb-3
+              pl-7
+              pr-7
+              |
+              pt-md-2
+              pb-md-2
+              pl-md-5
+              pr-md-5
+              |
+              pt-sm-2
+              pb-sm-2
+              pl-sm-7
+              pr-sm-7
+              |
+              text-m
+            "
+          >
+            台北中山旗艦店
+          </div>
+          <ul class="bd-t-900 | pt-5 pb-5 pl-7 pr-7 | text-s">
+            <li class="">
+              <i class="img-24 text-center text-600 fas fa-phone-alt mr-2"></i>
+              <span>
+                電話：<a href="tel:+(02)000-1234" class="text-600"
+                  >(02)000-1234</a
+                >
+              </span>
+            </li>
+            <li class="">
+              <i class="img-24 text-center text-600 far fa-clock mr-2"></i>
+              <span>營業時間: 10:00-21:00</span>
+            </li>
+            <li class="">
+              <i class="img-24 text-center text-600 fas fa-map-marker-alt mr-2"></i>
+              <span>地址：台北市中山區南京東路25巷2-1號</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <iframe
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4636119825086!2d121.53568141498823!3d25.052271043712786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf92494d29%3A0xd908a8a881f73476!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1627352772339!5m2!1szh-TW!2stw"
+        width="57%"
+        height="60%"
+        style="border: 0"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</section>
